@@ -1,0 +1,72 @@
+body, html {
+  font-family: 'Bebas Neue', sans-serif;
+  background-color: #021c2b;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+color: white;
+font-size: 4vmax;
+}
+
+#logo {
+  width: 200px;
+  height: 100px;
+  margin-left: 10px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0%;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+li > a {
+  text-decoration: none;
+  color: white;
+  font-size: 2.5vmax;
+}
+
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  margin-top: 80px;
+  list-style: none;
+  gap: 1rem;
+  margin-right: 10px;
+}
+
+#footer-middle {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #logo-footer {
+    width: 200px;
+    height: 100px;
+    margin-top: 15px;
+  }
+  
+  footer {
+    display: flex;
+  }
+  
+  #socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  #socials > svg {
+    width: 30px;
+    height: 30px;
+  }

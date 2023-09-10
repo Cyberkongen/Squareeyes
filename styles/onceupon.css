@@ -1,0 +1,78 @@
+
+h1, p, h2, h3 {
+  color: white;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+p {
+  font-size: 21px;
+}
+
+#loadingIndicator {
+  font-size: 48px;
+  color: white;
+}
+
+#price {
+  margin-top: 20%;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#contentright {
+    max-width: 40%;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+#content > img {
+    width: 25%;
+    height: auto;
+}
+
+button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 40%;
+    font-size: 18px;
+  }
+
+
+@media (max-width: 768px) {
+  #content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #content > img {
+    width: 90%;
+    height: auto;
+}
+#contentright {
+  max-width: 100%;
+}
+#logo {
+  width: 115px;
+  height: 80px;
+  margin-top: 20%;
+  margin-left: 10px;
+}
+}

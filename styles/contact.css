@@ -1,0 +1,35 @@
+
+
+.label {
+  font-size: 2vmax;
+  color: white;
+}
+
+.form-control {
+  width: 20vmax;
+  height: 2vmax;
+}
+
+.form-message {
+  width: 40vmax;
+  height: 8vmax;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  border: 2px solid black;
+  outline: 0;
+  padding: 12px;
+  color: black;
+  background-color: lightgray;
+  text-align: center;
+  cursor: pointer;
+  width: 40%;
+  font-size: 1.5vmax;
+  height: auto;
+}

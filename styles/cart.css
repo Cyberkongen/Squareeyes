@@ -1,0 +1,148 @@
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #1B2631;
+  }
+
+h1, p {
+  color: white;
+  margin-left: 15%;
+  font-size: 4vmax;
+}
+
+#logo {
+    width: 200px;
+    height: 100px;
+    margin-left: 10px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+li > a {
+  text-decoration: none;
+  color: white;
+  font-size: 3vmax;
+}
+
+
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    list-style: none;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+#footer-middle {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #logo-footer {
+    width: 200px;
+    height: 100px;
+    margin-top: 15px;
+  }
+  
+  footer {
+    display: flex;
+    margin-top: 2%;
+  }
+  
+  #socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  #socials > svg {
+    width: 30px;
+    height: 30px;
+  }
+
+
+#cart-content {
+    border: 2px solid grey; 
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    max-height: 300px;
+    margin-left: 15%;
+    margin-right: 15%;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  #cart-content {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
+
+
+#cart-content img {
+    width: 20%;
+    height: auto;
+}
+
+#cart-info1 {
+  width: 40%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2vmax;
+  color: white;
+  margin-left: 5%;
+}
+
+#cart-info2 {
+  width: 20%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4vmax;
+  color: white;
+  margin-right: 5%;
+}
+
+#cart-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+button {
+    border: 2px solid black;
+    outline: 0;
+    padding: 12px;
+    color: black;
+    background-color: yellowgreen;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 2vmax;
+    height: auto;
+}
+
+#button {
+  width: 40%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

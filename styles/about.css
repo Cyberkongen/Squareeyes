@@ -1,0 +1,14 @@
+
+#content > p {
+    font-size: 1.4vmax;
+    color: white;
+    font-family: sans-serif;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
