@@ -30,17 +30,31 @@
             <div id="loadingIndicator" style="display: none;">Loading...</div>
             <div id="contentright">
                 <h1 class="title"></h1>
-                <h3 class="description"></h3>
+                <p class="description"><p>
                 <p class="genre">genre:</p>
                 <p class="released">released:</p>
-                <p class="rating">rating:</p>
+                <div class="rating-container">
+                    <div class="star-rating">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_229_357)">
+                            <path d="M12 18.26L4.947 22.208L6.522 14.28L0.587002 8.792L8.614 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z" fill="yellow"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_229_357">
+                            <rect width="24" height="24" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>                            
+                        <p class="rating"></p>
+                    </div>
+                </div>
                 <div id="price">
-                    <h2 class="price">price:</h2>
+                    <p class="price">price:<p>
                     <p class="onSale"></p>
                 </div>
                 <img class="img">
                 <div class="favorite"></div>
-                <button>add to cart</button>
+                <button id="add-cart">add to cart</button>
             </div>
         </div>
     </main>

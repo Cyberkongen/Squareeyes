@@ -53,7 +53,7 @@ async function fetchProductInfo () {
     contentright.getElementsByClassName("description")[0].textContent = productDetail.description;
     contentright.getElementsByClassName("released")[0].textContent = `released: ${productDetail.released}`;
     content.querySelector(`img`).src = productDetail.image;
-    contentright.getElementsByClassName(`rating`)[0].textContent = `rating: ${productDetail.rating}`;
+    contentright.getElementsByClassName(`rating`)[0].textContent = `${productDetail.rating}`;
     contentright.getElementsByClassName(`price`)[0].textContent = `Price: ${productDetail.price}`;
     contentright.getElementsByClassName(`genre`)[0].textContent = `genre: ${productDetail.genre}`;
 
@@ -68,5 +68,10 @@ async function fetchProductInfo () {
 }
 
 }
+
+let addCart = document.getElementById(`add-cart`);
+addCart.addEventListener("click", function() {
+    console.log("Added to cart");
+})
 
 fetchProductInfo()
