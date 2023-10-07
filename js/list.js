@@ -5,6 +5,7 @@ const movieIds = movieCardsContainer.getElementsByClassName("card");
 
 let productsInCart = [];
 
+
 async function fetchList () {
     
     const respone = await fetch(apiUrl);
@@ -34,8 +35,9 @@ async function fetchList () {
         if (!productIsInCart(product)) {
           product.inCart = 1;
           productsInCart.push(product);
-          console.log(product);
-  
+          updateCartCount();
+          console.log(productsInCart);
+
           localStorage.setItem("productsInCart", JSON.stringify(productsInCart));
         }
       });
@@ -47,8 +49,25 @@ function productIsInCart(product) {
   return productsInCart.some((item) => item.id === product.id);
 }
 
+const cartElement = document.querySelector(".shopCart");
+
+function updateCartCount() {
+  if (Array.isArray(productsInCart) && productsInCart.length > 0) {
+    const numberOfItemsInCart = productsInCart.length;
+    cartElement.textContent = `Cart (${numberOfItemsInCart})`;
+  } else {
+    cartElement.textContent = "0";
+  }
+}
+
+const cartData = JSON.parse(localStorage.getItem("productsInCart"));
+if (Array.isArray(cartData) && cartData.length > 0) {
+  productsInCart = cartData;
+  updateCartCount();
+}
+
+
 
 fetchList();
 
-console.log(productsInCart);
 

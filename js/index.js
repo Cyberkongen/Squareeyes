@@ -45,7 +45,6 @@ async function squareEyes() {
     imageLink.forEach(function (link, index) {
       link.addEventListener("click", function() {
         const movie = results[index];
-        console.log("You clicked this image:" + link.querySelector("img").id);
         window.location.href = `onceupon.html?id=${movie.id}&title=${movie.title}&released=${movie.released}&rating=${movie.rating}&price=${movie.price}&onsale=${movie.onSale}&favorite=${movie.favorite}&genre=${movie.genre}&description=${movie.description}&image=${movie.image}`;
       });
     });
